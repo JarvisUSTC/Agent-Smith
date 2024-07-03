@@ -88,7 +88,7 @@ accelerate launch --config_file accelerate_config.yaml optimize.py --border=$bor
 
 We set `$prob_random_flip` as 0.5, `$prob_random_jpeg` as 0.5, `$upper_random_resize` as 448, and `$lower_random_resize` as 224.
 
-save path: ./attack/experiments/
+Save path: ./attack/experiments/
 
 ### Validation
 
@@ -106,7 +106,7 @@ python validate.py --border=$border --div=$div --unconstrained
 
 Afterward, we will save the selected adversarial image named `adv_image.png` in the experimental folder.
 
-save path: ./attack/experiments/xx/xx/adv_image.png
+Save path: ./attack/experiments/xx/xx/adv_image.png
 
 ## Simulation
 
@@ -123,9 +123,10 @@ Run the following command to evaluate the crafted adversarial images.
 ```shell
 time accelerate launch --num_processes=4 simulation/simulation_test_batch.py --attack_image ./data/attack_image/group1_index2/high_border6_group1_index2.png --num_agents 256 --high
 ```
-Check [Analyze.ipynb](Analyze.ipynb) to plot the infection curves.
+Save path: ./data/results/xx/x.csv
 
-save path: ./data/results/xx/x.csv
+Then, check [Analyze.ipynb](Analyze.ipynb) to plot the infection curves.
+
 
 # Bibtex
 If you find this project useful in your research, please consider citing our paper:
