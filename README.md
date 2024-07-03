@@ -46,6 +46,9 @@ We run all our experiments on A100 GPUs with 40GB memory. To get started, follow
    pip install git+https://github.com/necla-ml/Diff-JPEG
    pip install protobuf pandas kornia
    ```
+4. **Download model checkpoints:**
+First, download llava-1.5-7b-hf as VLM from [huggingface](https://huggingface.co/llava-hf/llava-1.5-7b-hf) or [modelscope](https://www.modelscope.cn/models/huangjintao/llava-1.5-7b-hf), and download clip-vit-large-patch14 as RAG from [huggingface](https://huggingface.co/openai/clip-vit-large-patch14) or [modelscope](https://www.modelscope.cn/models/AI-ModelScope/clip-vit-large-patch14). Then, set parser arguments for each python script.
+
 
 ## Datasets
 
